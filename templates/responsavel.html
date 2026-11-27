@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CADASTRO DE RESPONSÁVEL</h1>
+    <form action="/responsavel" method="post">
+        <p>Nome</p>
+        <input type="text" name="nome">
+        <p>CPF</p>
+        <input type="text" name="cpf">
+        <button type="submit">CADASTRAR</button>
+    </form>
+
+    <h1>RESPONSAVEIS CADASTRADOS</h1>
+    <table>
+        <tr>
+            <th>ID RESPONSAVEL</th>
+            <th>CPF</th>
+            <th>NOME</th>
+            <th>BOTOES</th>
+        </tr>
+
+        <tr>
+            <form action="/alterar" method="post">
+                <td>
+                    <input type="text" value="1">
+                </td>
+                <td>
+                    <input type="text" value="111.111.111-11">
+                </td>
+                <td>
+                    <input type="text" value="Manu">
+                </td>
+
+                <td>
+                    <a href="/excluir">EXCLUIR</a>
+                    <button type="submit">ALTERAR</button>
+                </td>
+            </form>
+        </tr>
+    </table>
+</body>
+</html>
